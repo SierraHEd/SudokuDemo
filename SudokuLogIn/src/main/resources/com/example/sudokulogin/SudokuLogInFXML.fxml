@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="LogInSignUpHolder" minHeight="-Infinity" minWidth="-Infinity" prefHeight="972.0" prefWidth="2495.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudokulogin.HelloController">
+   <center>
+      <TabPane prefHeight="895.0" prefWidth="1228.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="Sign Up">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightcyan;">
+                     <children>
+                        <Label alignment="TOP_CENTER" layoutX="-43.0" layoutY="14.0" prefHeight="115.0" prefWidth="465.0" text="Sudoku!" underline="true">
+                           <font>
+                              <Font name="Yu Gothic Light" size="96.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" startY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.010067114093959731">
+                                       <color>
+                                          <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <TextField fx:id="SignUpUsernameText" layoutX="895.0" layoutY="225.0" opacity="0.8" style="-fx-background-color: lightblue;" />
+                        <TextField fx:id="SignUpPasswordText" layoutX="896.0" layoutY="271.0" opacity="0.8" style="-fx-background-color: lightblue;" />
+                        <HBox layoutX="-3.0" layoutY="476.0">
+                           <padding>
+                              <Insets top="120.0" />
+                           </padding>
+                        </HBox>
+                        <Label layoutX="802.0" layoutY="229.0" text="Username:">
+                           <font>
+                              <Font name="Yu Gothic Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="804.0" layoutY="273.0" text="Password:">
+                           <font>
+                              <Font name="Yu Gothic Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="833.0" layoutY="316.0" text="Email:">
+                           <font>
+                              <Font name="Yu Gothic Light" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="SignUpEmailText" layoutX="895.0" layoutY="314.0" opacity="0.8" style="-fx-background-color: lightblue;" />
+                        <Button fx:id="SignUpButton" blendMode="DARKEN" layoutX="935.0" layoutY="362.0" mnemonicParsing="false" onAction="#SignUpEvent" prefHeight="25.0" prefWidth="70.0" text="Enter">
+                           <textFill>
+                              <LinearGradient endX="0.6255924170616114" startX="0.3791469194312796">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.14392462372779846" green="0.00487329438328743" blue="0.5263158082962036" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                        <Label layoutX="876.0" layoutY="141.0" prefHeight="58.0" prefWidth="220.0" text="Sign up" underline="true">
+                           <font>
+                              <Font name="Yu Gothic Light" size="48.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Log In">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightcyan;">
+                     <children>
+                        <Label alignment="TOP_CENTER" layoutX="-43.0" layoutY="14.0" prefHeight="115.0" prefWidth="465.0" text="Sudoku!" textOverrun="CENTER_ELLIPSIS" underline="true">
+                           <font>
+                              <Font name="Yu Gothic Light" size="96.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" startY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.010067114093959731">
+                                       <color>
+                                          <Color red="0.10999999940395355" green="0.21171428263187408" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="895.0" layoutY="129.0" prefHeight="58.0" prefWidth="147.0" text="Log in" underline="true">
+                           <font>
+                              <Font name="Yu Gothic Light" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="811.0" layoutY="232.0" text="Username:">
+                           <font>
+                              <Font name="Yu Gothic Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="813.0" layoutY="289.0" text="Password:">
+                           <font>
+                              <Font name="Yu Gothic Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="LogInPasswordText" layoutX="911.0" layoutY="287.0" opacity="0.79" style="-fx-background-color: lightblue;" />
+                        <TextField fx:id="LogInUsernameText" layoutX="911.0" layoutY="230.0" opacity="0.79" style="-fx-background-color: lightblue;" />
+                        <Button fx:id="LogInButton" blendMode="DARKEN" layoutX="951.0" layoutY="335.0" mnemonicParsing="false" onAction="#LogInEvent" prefHeight="25.0" prefWidth="70.0" text="Enter">
+                           <textFill>
+                              <LinearGradient endX="0.6255924170616114" startX="0.3791469194312796">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.14392462372779846" green="0.00487329438328743" blue="0.5263158082962036" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                        <HBox layoutX="7.0" layoutY="486.0">
+                           <padding>
+                              <Insets top="120.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <effect>
+            <Blend />
+         </effect>
+      </TabPane>
+   </center>
+</BorderPane>
