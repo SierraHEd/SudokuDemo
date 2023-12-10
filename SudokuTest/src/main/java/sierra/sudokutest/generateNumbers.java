@@ -190,13 +190,12 @@ public class generateNumbers {
         }
         System.out.println();
     }
-
-    // Driver code
-    public static void main(String[] args)
-    {
-        int N = 9, K = 20;
-        generateNumbers sudoku = new generateNumbers(N, K);
-        sudoku.fillValues();
-        sudoku.printSudoku();
+    public int[][] getGeneratedSudoku() {
+    return mat;
     }
+        // Check if it's safe to place a number in the given position
+    public boolean isSafe(int row, int col, int num, int[][] currentBoard) {
+        return unUsedInRow(row, num) && unUsedInCol(col, num) && unUsedInBox(row - row % SRN, col - col % SRN, num);
+    }
+
 }
